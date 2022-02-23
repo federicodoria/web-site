@@ -1,0 +1,173 @@
+:root{
+    --background: rgba();
+  }
+  
+  body{
+    margin : 0;
+    background: #99999;
+    font-family: 'Bigshot One';
+  }
+  
+  .content{
+    height: 200vh;
+    background-color: #99999;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items:center;
+  }
+  
+  /* qua comincia lo stile della NavBar 
+  
+  header{
+    background: var(--background);
+    text-align: left;
+    position: fixed;
+    z-index: 999;
+    width: 100%; 
+  }
+  
+  .logo{
+    margin-left: 1em;
+  }
+  
+  .nav-toggle{
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
+    top: -26%;
+    right: 0;
+    margin-right: 2em;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    display: block;
+    background: black;
+    height: 3px;
+    width: 1em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    content:"";
+    position: absolute;
+  }
+  
+  .nav-toggle-label span::before{
+    bottom: 7px;
+  }
+  
+  .nav-toggle-label span::after{
+    top: 7px;
+  }
+  
+  nav{
+    position: relative;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+  }
+  
+  nav ul{
+    margin: 1em;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav li{
+    margin bottom: 1em;
+    margin-left: 1em;
+  }
+  
+  nav a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  .nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity:1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .nav-toggle-label{
+      display: none;
+    }
+    
+    header {
+      display: grid;
+      grid-template-columns: .125fr 1fr auto minmax(600px, 1fr) .25fr;
+    }
+    
+    .logo {
+      grid-column: 2 / span 1;
+    }
+    
+    nav {
+      all: unset;
+      grid-column: 4 / 5;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    nav li {
+      margin-left: 4em;
+      margin-bottom: 0;
+    }
+    
+    nav a {
+      opacity: 1;
+      position: relative;
+    }
+    
+    nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+    }
+  
+    nav a:hover {
+      color: orange;
+      right: -10px;
+    }
+  
+    nav a:hover::after {
+      transform: scale(1, 1);
+    } */
+    
+  }

@@ -1,0 +1,214 @@
+/* Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Struttura generale */
+
+body{
+    font-family: 'Bigshot One';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration-line: none;
+	color: #00004B;
+	margin: 0;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+header{
+	height: 8%;
+	width: 100%;
+	background-color:hsla(224, 38%, 80%, 0.5);
+	position: fixed;
+	bottom: 0%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid black;
+}
+
+nav{
+	position: absolute;
+	width: 33%;
+	display: flex;
+	font-size: 3vw;
+	border: 2px solid black;
+	align-self: center;
+}
+
+ul{
+	width: 100%;
+    list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+li{
+    font-weight: bold;
+}
+
+a{
+	color: #00004B;
+    transition: .15s all ease-in-out;
+}
+
+@keyframes link-hover{
+
+}
+
+a:hover{
+    color: orange;
+	transform: translate(5%); /* Perché non funziona la traslazione? Forse perché non è un oggetto block?
+
+	Mi sa di dover usare JavaScript per animare il simboletto come pensava Ple
+
+	a::before{
+		content: "- "
+	}
+
+	a::before:hover{
+	transform: rotate(30deg);
+}
+	*/
+}
+
+.title{
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+  color: #fefefe;
+  
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+video{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+main{
+	margin-top: 100vh;
+}
+
+aside{
+	width: 100%;
+}
+
+/* Valutare se cambiare il colore del testo quando viene selezionato
+
+::selection{
+	background-color: orange;
+}
+*/
+
+@media screen and (min-width: 800px){
+
+	body{
+		flex-direction: row;
+	}
+
+	header{
+		height: 10%;
+		width: 100%;
+		background-color: hsla(224, 38%, 80%, 0.25);
+		position: fixed;
+		top: 0%;
+		left: 0%;
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+
+	nav{
+		position: absolute;
+		font-size: 20px;
+		justify-content: space-between;
+		align-items: flex-end;
+		display: flex;
+	}
+
+	ul{
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+
+	main{
+		margin-top: 100vh;
+		float: left;
+		width:60%;
+	}
+
+	aside{
+		margin-top: 8%;
+		width: 40%;
+		float: right;
+	}
+    
+}
