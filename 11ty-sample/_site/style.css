@@ -58,6 +58,10 @@ img{
 
 /* Struttura generale */
 
+:root{
+	--title-pos: 0;
+}
+
 body{
 	font-style: normal;
 	font-weight: bold;
@@ -65,16 +69,12 @@ body{
 	text-decoration-line: none;
 	color: #00004B;
 	margin: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 }
 
 .overlay{
 	z-index: 1;
 	background-color: #000;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -88,6 +88,7 @@ body{
 
 div > h1 {
 	font-family: 'Bigshot One';
+	transform: translateY(var(--title-pos));
 }
 
 .title{
@@ -99,7 +100,6 @@ div > h1 {
   	margin-left: 1em;
   	font-size: 6rem;
   	font-weight: 800;
-  	justify-items: center;
 }
 
 video{
