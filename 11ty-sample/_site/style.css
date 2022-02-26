@@ -89,6 +89,8 @@ body{
 div > h1 {
 	font-family: 'Bigshot One';
 	transform: translateY(var(--title-pos));
+	font-size: 6rem;
+  	font-weight: 800;
 }
 
 .title{
@@ -98,8 +100,6 @@ div > h1 {
   	color: #fefefe;
   
   	margin-left: 1em;
-  	font-size: 6rem;
-  	font-weight: 800;
 }
 
 video{
@@ -120,13 +120,14 @@ video{
 }
 
 h1{
-	font-family: 'Roboto Serif';
+	font-family: 'Lato';
 	font-weight: bold;
+	font-size: 24px;
 }
 
 main{
 	padding: 1em;
-	font-family: 'Lato';
+	font-family: 'Roboto Serif';
 	font-weight:400;
 	float: left;
 	width:60%;

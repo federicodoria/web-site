@@ -1,5 +1,5 @@
 var overlay = basicScroll.create({
-    elem: document.querySelector('.overlay'), 
+    elem: document.querySelector('.title'), 
     from: 'top-top',
     to: 'bottom-top',
     props: {
