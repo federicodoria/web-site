@@ -143,6 +143,14 @@ a{
 	color: #00004B;
 }
 
+.podcast{
+	display: flex;
+}
+
+.podcast > iframe{
+	margin: 5px;
+}
+
 aside{
 	margin-top: 8%;
 	width: 40%;
